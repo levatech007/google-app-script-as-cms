@@ -1,17 +1,17 @@
-#Google App Script as Content Management System
+# Google App Script as Content Management System
 
 This is a very simple starter app to be able to use Google App Script as a CMS for a simple front-end site. It allows for the site content to be edited via Google spreadsheets and contact form submissions to be sent to a separate Google spreadsheet. 
 
-##How to use it
+## How to use it
 
-####Front End:
+#### Front End:
 You can use any front-end site. This example includes a simple HTML/CSS/JS page but any front-end framework will work as well. Simply connect to your App Script via Ajax call. 
 
-####Back End:
+#### Back End:
 
 *Note: You will need a Google account for this app.*
 
-#####Create Spreadsheets:
+##### Create Spreadsheets:
 Create new spreadsheets in your Google drive. This example uses two separate sheets: one to store site content and the other to store contact form submissions. 
 
 Spreadsheet 1 with site content:
@@ -21,6 +21,7 @@ ContainerId | ContainerPosition | Title | Content | List
 content1 | left | Title One | Content goes here | List, Items, Here
 content2 | right | Title One | Content goes here | List, Items, Here
 
+ContainerId corresponds to the content location on the HTML page:
 ```
    <div class="row">
       <!-- left column -->
@@ -35,11 +36,12 @@ content2 | right | Title One | Content goes here | List, Items, Here
 ```
 
 Spreadsheet 2 with form submissions:
+
 Timestamp | Name | Email | Message 
  --- | --- | --- | --- | --- 
 
 
-#####Create App Script:
+##### Create App Script:
 
 Go to [Google App Script](https://script.google.com) and create new script.
 
@@ -62,12 +64,12 @@ Once your code is completed, Publish -> Deploy as web app (repeat this every tim
 
 
 
-###Github support:
+### Github support:
 
 If you want to commit your code to Github from Google App Script, you can add the [Chrome extension for GitHub Assistant] (https://chrome.google.com/webstore/detail/google-apps-script-github/lfjcgcmkmjjlieihflfhjopckgpelofo?hl=en) to your browser. 
 
 
-##Future improvements:
+## Future improvements:
 
 Make entire site content available to edit via App Script.
 Make use of Clasp to use app script locally.
