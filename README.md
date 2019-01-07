@@ -38,9 +38,8 @@ ContainerId corresponds to the content location on the HTML page:
 Spreadsheet 2 with form submissions:
 
 Timestamp | Name | Email | Message 
- --- | --- | --- | --- | --- 
-
-
+ --- | --- | --- | --- | ---
+ 
 ##### Create App Script:
 
 Go to [Google App Script](https://script.google.com) and create new script.
