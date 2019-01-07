@@ -1,8 +1,8 @@
 var sendToEmail = Config().sendToEmail;
 var messages;
 
-function processForm(name, email, message) {
-  var formIsValid = validateForm(name, email, message);
+function processForm(params) {
+  var formIsValid = validateForm(params);
   formIsValid ?  messages = ["Successfully submitted!"] : messages = returnErrors()
   return formIsValid;
 }
@@ -11,15 +11,15 @@ function getMessages() {
   return messages;
 }
 
-function sendEmail(name, email, message) {
-  var formattedName = name.charAt(0).toUpperCase() + name.slice(1);
+function sendEmail(params) {
+  var formattedName = params.name.charAt(0).toUpperCase() + params.name.slice(1);
   MailApp.sendEmail({
         to: sendToEmail,
         subject: "New form entry: " + formattedName,
         htmlBody:
         "Name: " + formattedName + "<br>" +
-        "Email: " + email + "<br>" +
-        "Message: " + message
+        "Email: " + params.email + "<br>" +
+        "Message: " + params.message
       });
 }
 

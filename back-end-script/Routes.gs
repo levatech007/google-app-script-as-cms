@@ -8,11 +8,8 @@ function doGet(e) {
 function doPost(e) {
   var response;
   if(typeof e !== "undefined") {
-    var name = e.parameter.name;
-    var email = e.parameter.email;
-    var message = e.parameter.message;
-    var formIsValid = processForm(name, email, message);
-    formIsValid ? sendEmail(name, email, message) : null;
+    var formIsValid = processForm(e.parameter);
+    formIsValid ? sendEmail(e.parameter) : null;
     formIsValid ? postDataToSheet(e) : null;
     var response = buildResponse(formIsValid, getMessages());
   } else {
