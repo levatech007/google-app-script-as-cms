@@ -35,16 +35,10 @@ ContainerId corresponds to the content location on the HTML page:
     </div>
 ```
 
-Spreadsheet 2 with form submissions:
-
-ContainerId | ContainerPosition | Title | Content | List 
- --- | --- | --- | --- | --- 
-content1 | left | Title One | Content goes here | List, Items, Here
-content2 | right | Title One | Content goes here | List, Items, Here
-
+Spreadsheet 2 for form submissions:
 
 Timestamp | Name | Email | Message 
---- | --- | --- | --- | ---
+--- | --- | --- | --- 
  1/7/2019 13:33:35 | Jane | jane@test.com | Message will appear here
  
 ##### Create App Script:
