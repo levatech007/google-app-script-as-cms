@@ -37,6 +37,11 @@ ContainerId corresponds to the content location on the HTML page:
 
 Spreadsheet 2 with form submissions:
 
+ContainerId | ContainerPosition | Title | Content | List 
+ --- | --- | --- | --- | --- 
+content1 | left | Title One | Content goes here | List, Items, Here
+content2 | right | Title One | Content goes here | List, Items, Here
+
 
 Timestamp | Name | Email | Message 
 --- | --- | --- | --- | ---
