@@ -1,15 +1,134 @@
 <!doctype html>
 <html>
-<head>
-    <title>Google App Script As API</title>
-    <meta charset="utf-8" />
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-</head>
+  <head>
+    <title>Google App Script as API/CMS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="app.js"></script>
+  </head>
 
-<body>
-<div>
-    <h1>Google App Script as API</h1>
-</div>
-</body>
+  <body>
+    <!-- TOP MENU BAR WITH LOGO, PHONE# -->
+    <div class="container">
+      <div class="row section-margin">
+        <div class="col-sm-4">LOGO</div>
+        <div class="col-sm-4 offset-sm-4 text-right">(123) 456-7890</div>
+      </div>
+    </div>
+
+      <!-- HERO CONTENT -->
+    <div class="jumbotron jumbotron-fluid">
+      <h1 class="display-4">GOOGLE APP SCRIPT AS API/CMS</h1>
+      <hr>
+      <p class="lead" id="siteDescription">This is a simple HTML/CSS/JS website that uses Google App Script as a content management system. All site content is entered into a Google spreadsheet and loaded via AJAX call to this site.</p>
+    </div>
+
+    <div class="row divider"></div>
+
+    <!-- ROW 1 -->
+    <div class="row"  id="work">
+      <!-- LEFT -->
+      <div class="col-md-6 blue section-padding" id="content1">
+        <!-- append content here -->
+      </div>
+      <!-- RIGHT -->
+      <div class="col-md-6 gray section-padding" id="content2">
+        <!-- append content -->
+      </div>
+    </div>
+
+    <!-- ROW 2 -->
+    <div class="row">
+      <!-- LEFT -->
+      <div class="col-md-6 blue" id="list-content1">
+        <!-- append list content -->
+      </div>
+      <!-- RIGHT-->
+      <div class="col-md-6 gray" id="list-content2">
+        <!-- append list content -->
+      </div>
+    </div>
+
+    <div class="row divider"></div>
+
+    <!-- ROW 3 -->
+    <div class="row"  id="contact">
+      <!-- LEFT: CONTACT INFO -->
+      <div class="col-md-6 gray section-padding" id="content3">
+        <div class="row">
+          <div class="col-md-8 offset-md-3">
+            <div class="row justify-content-center">
+              <h3>Contact</h3>
+            </div>
+            <hr>
+            <div class="row justify-content-center">
+              <div class="col-md-6">
+                <h4>Company Name</h4>
+                <p>123 Main Street</p>
+                <p>Anytown, US 11223</p>
+                <h4>(123) 456-7890</h4>
+                <p>email@email.com</p>
+                <p class="small">Disclaimers, other text about company</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- RIGHT: CONTACT FORM -->
+      <div class="col-md-6 blue section-padding" id="content4">
+        <div class="row">
+          <div class="col-md-8 offset-md-1">
+            <div class="row justify-content-center">
+              <h3>Get in touch</h3>
+            </div>
+            <hr>
+            <div class="row justify-content-center" id="alert"></div>
+            <p>Contact us to get more information about our company, products or services</p>
+            <div class="row">
+              <div class="col-md-12">
+                <form id="submitMessage">
+                  <div class="form-group row">
+                    <label for="exampleFormControlInput1" class="col-sm-3 col-form-label">Name</label>
+                    <div class="col-sm-9">
+                      <input type="text" name="name" class="form-control" id="exampleFormControlInput1" placeholder="Your name">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="exampleFormControlInput1" class="col-sm-3 col-form-label">Email</label>
+                    <div class="col-sm-9">
+                      <input type="email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="Your email">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="exampleFormControlTextarea1" class="col-sm-3 col-form-label">Message</label>
+                    <div class="col-sm-9">
+                      <textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="3" placeholder="Your message"></textarea>
+                    </div>
+                  </div>
+                  <div class="row justify-content-center">
+                    <button type="submit" class="btn btn-light">Send</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+      <div class="container">
+        <div class="row justify-content-center footer">
+          <p class="small">&copy; 2018 Owner of page | Other Text</p>
+        </div>
+      </div>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
 </html>

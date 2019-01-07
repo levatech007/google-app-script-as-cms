@@ -10,6 +10,7 @@ function addHeadings(contents, headings) {
     headings.forEach(function(heading, idx) {
       contentAsObj[heading] = contentAsArray[idx];
     });
+    // turn content of 'list' to an array
     contentAsObj['list'] = contentAsObj['list'].split(",");
     return contentAsObj;
   });
