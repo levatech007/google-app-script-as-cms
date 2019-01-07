@@ -18,6 +18,25 @@ $(document).ready(function() {
     }
   });
 
+  $form.submit( e => {
+    e.preventDefault();
+    $.post({
+      url: url,
+      data: $form.serialize(),
+      success: function(data) {
+        let response = JSON.parse(data);
+        if(response.formIsValid)
+          $alert.append(alertMessage(response.message, "success"));
+        else
+          $alert.append(alertMessage(response.message, "danger"));
+      },
+      error: function(error) {
+        $alert.append(alertMessage("Try again later!", "danger"));
+      }
+    });
+    $form[0].reset();
+  });
+
   //create each content section
   function renderContainer(content) {
 
@@ -66,25 +85,6 @@ $(document).ready(function() {
             </div>`
   };
 
-  $form.submit( e => {
-    e.preventDefault();
-    $.post({
-      url: url,
-      data: $form.serialize(),
-      success: function(data) {
-        let response = JSON.parse(data);
-        console.log(response)
-        if(response.formIsValid)
-          $alert.append(alertMessage(response.message, "success"));
-        else
-          $alert.append(alertMessage(response.message, "danger"));
-      },
-      error: function(error) {
-        console.log(error)
-        $alert.append(alertMessage("Try again later!", "danger"));
-      }
-    });
-    $form[0].reset();
-  });
+
 
 });
