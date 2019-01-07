@@ -39,6 +39,7 @@ Spreadsheet 2 with form submissions:
 
 Timestamp | Name | Email | Message 
  --- | --- | --- | --- | ---
+ 1/7/2019 13:33:35 | Jane | jane@test.com | Message will appear here
  
 ##### Create App Script:
 
