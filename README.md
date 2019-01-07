@@ -36,7 +36,6 @@ ContainerId corresponds to the content location on the HTML page:
 ```
 
 Spreadsheet 2 with form submissions:
-
 Timestamp | Name | Email | Message 
  --- | --- | --- | --- | ---
  1/7/2019 13:33:35 | Jane | jane@test.com | Message will appear here
@@ -71,9 +70,9 @@ If you want to commit your code to Github from Google App Script, you can add th
 
 ## Future improvements:
 
-Make entire site content available to edit via App Script.
-Make use of Clasp to use app script locally.
-This backend code does not work by cloning this repo.
-How to pull the folder content only?
+- Make entire site content available to edit via App Script.
+- Make use of Clasp to use app script locally.
+- This backend code does not work by cloning this repo.
+- How to pull the folder content only?
 
 
