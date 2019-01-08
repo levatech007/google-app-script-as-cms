@@ -1,12 +1,12 @@
 # Google App Script as Content Management System
 
-This is a very simple starter app to be able to use Google App Script as a CMS for a simple front-end site. It allows for the site content to be edited via Google spreadsheets and contact form submissions to be sent to a separate Google spreadsheet. 
+This is a very simple starter website (front-end folder) and app (back-end-script folder) to be able to use Google App Script as a back-end CMS for a simple front-end site. It allows for the site content to be edited via Google spreadsheets and contact form submissions to be sent to a separate Google spreadsheet as well as emailed to client. This is a very simple but a working solution if the site you are building does not contain a lot of (secure) data, your client is not very tech savvy and cost needs to be taken into account. 
 
 ## How to use it
 
 #### Front End:
 
-[Front End Page](https://google-app-script-as-cms.netlify.com/)
+*See [Front End Page](https://google-app-script-as-cms.netlify.com/) here.*
 
 You can use any front-end site. This example includes a simple HTML/CSS/JS page but any front-end framework will work as well. Simply connect to your App Script via Ajax call. 
 
