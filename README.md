@@ -43,6 +43,7 @@ Timestamp | Name | Email | Message
  
 ##### Create App Script:
 *I'm working on being able to just clone the directory to your new script project.*
+
 Go to [Google App Script](https://script.google.com) and create a new script.
 
 Right click on Code.gs and rename it to any of the files listed in this back-end repo. Add new files (File -> New -> Script file) until you have all the files that are included in this backend repo. Copy the code included in each file to corresponding file in your App Script. Add your corresponding spreadsheet IDs to Config.gs. You will find them in the URL of your spreadsheet: `https://docs.google.com/spreadsheets/d/{ spreadsheet ID }/`. 
