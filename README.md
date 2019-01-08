@@ -64,7 +64,7 @@ Once your code is completed, Publish -> Deploy as web app (repeat this every tim
 
 ### Github support:
 
-If you want to commit your code to Github from Google App Script, you can add the [Chrome extension for GitHub Assistant] (https://chrome.google.com/webstore/detail/google-apps-script-github/lfjcgcmkmjjlieihflfhjopckgpelofo?hl=en) to your browser. 
+If you want to commit your code to Github from Google App Script, you can add the [Chrome extension for GitHub Assistant](https://chrome.google.com/webstore/detail/google-apps-script-github/lfjcgcmkmjjlieihflfhjopckgpelofo?hl=en) to your browser. 
 
 
 ## Future improvements:
