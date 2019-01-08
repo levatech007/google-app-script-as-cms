@@ -5,6 +5,9 @@ This is a very simple starter app to be able to use Google App Script as a CMS f
 ## How to use it
 
 #### Front End:
+
+[Front End Page](https://google-app-script-as-cms.netlify.com/)
+
 You can use any front-end site. This example includes a simple HTML/CSS/JS page but any front-end framework will work as well. Simply connect to your App Script via Ajax call. 
 
 #### Back End:
