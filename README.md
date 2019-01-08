@@ -12,7 +12,7 @@ You can use any front-end site. This example includes a simple HTML/CSS/JS page 
 *Note: You will need a Google account for this app.*
 
 ##### Create Spreadsheets:
-Create new spreadsheets in your Google drive. This example uses two separate sheets: one to store site content and the other to store contact form submissions. 
+Create new spreadsheets in your Google Drive. This example uses two separate spreadsheets: one to store the site content and the other to store contact form submissions. 
 
 Spreadsheet 1 with site content:
 
@@ -42,8 +42,8 @@ Timestamp | Name | Email | Message
  1/7/2019 13:33:35 | Jane | jane@test.com | Message will appear here
  
 ##### Create App Script:
-
-Go to [Google App Script](https://script.google.com) and create new script.
+*I'm working on being able to just clone the directory to your new script project.*
+Go to [Google App Script](https://script.google.com) and create a new script.
 
 Right click on Code.gs and rename it to any of the files listed in this back-end repo. Add new files (File -> New -> Script file) until you have all the files that are included in this backend repo. Copy the code included in each file to corresponding file in your App Script. Add your corresponding spreadsheet IDs to Config.gs. You will find them in the URL of your spreadsheet: `https://docs.google.com/spreadsheets/d/{ spreadsheet ID }/`. 
 
@@ -59,10 +59,7 @@ function Config() {
 }
 ``` 
 
-Once your code is completed, Publish -> Deploy as web app (repeat this every time after you make changes to your code). Make sure to allow ‘Anyone, even anonymous’ access to your app. Copy  
-
-
-
+Once your code is completed, Publish -> Deploy as web app (repeat this every time after you make changes to your code). Make sure to allow ‘Anyone, even anonymous’ access to your app. Copy the provided app URL to your Ajax call in the front-end. 
 
 ### Github support:
 
@@ -72,8 +69,8 @@ If you want to commit your code to Github from Google App Script, you can add th
 ## Future improvements:
 
 - Make entire site content available to edit via App Script.
-- Make use of Clasp to use app script locally.
-- This backend code does not work by cloning this repo.
+- Make use of Clasp to be able to use app script locally.
+- Clone just the back-end repo via Github Assistant. Currently it will pull the entire repo.
 - How to pull the folder content only?
 
 
